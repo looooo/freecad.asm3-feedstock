@@ -5,7 +5,7 @@ Home:
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Experimental attempt for the next generation assembly workbench for FreeCAD
 
