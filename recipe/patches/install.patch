@@ -1,0 +1,27 @@
+diff --git a/freecad/__init__.py b/freecad/__init__.py
+deleted file mode 100644
+index 20a6601..0000000
+--- a/freecad/__init__.py
++++ /dev/null
+@@ -1,5 +0,0 @@
+-__path__ = __import__('pkgutil').extend_path(__path__, __name__)
+-try:
+-    __import__('pkg_resources').declare_namespace(__name__)
+-except ImportError:
+-    __path__ = __import__('pkgutil').extend_path(__path__, __name__)
+diff --git a/setup.py b/setup.py
+index 47f3cf6..5fc7eec 100644
+--- a/setup.py
++++ b/setup.py
+@@ -8,10 +8,8 @@ with open(version_path) as fp:
+ 
+ setup(name='freecad.asm3',
+       version=str(__version__),
+-      packages=['freecad',
+-                'freecad.asm3'],
++      packages=['freecad.asm3'],
+       url="https://github.com/realthunder/FreeCAD_assembly3",
+       description="Experimental attempt for the next generation assembly workbench for FreeCAD ",
+-      namespace_packages=["freecad"],
+       install_requires=["six"],
+       include_package_data=True)
